@@ -10,30 +10,45 @@
         body {
           font-family: Arial, sans-serif;
           background-color: #f2f2f2;
+          margin: 0;
         }
-        h1 {
+        header {
+          background-color: #333;
+          color: #fff;
+          padding: 20px;
           text-align: center;
-          color: #333;
+        }
+        header h1 {
+          margin: 0;
+          font-size: 36px;
         }
         .container {
           max-width: 800px;
           margin: 0 auto;
           padding: 20px;
-        }
-        .feature {
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-between;
+        }
+        .sport-card {
+          width: 30%;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          padding: 20px;
           margin-bottom: 20px;
         }
-        .feature img {
-          width: 30%;
+        .sport-card img {
+          width: 100%;
+          margin-bottom: 20px;
         }
-        .feature h3 {
-          color: #333;
+        .sport-card h3 {
           font-size: 24px;
           margin-bottom: 10px;
+          color: #333;
         }
-        .feature p {
+        .sport-card p {
           font-size: 18px;
           color: #333;
           line-height: 1.5;
@@ -42,41 +57,37 @@
       </style>
 </head>
 <body>
-    <h1>Sport website</h1>
+    <header>
+      <h1>Sport Website</h1>
+    </header>
     <div class="container">
-      <div class="feature">
+      <div class="sport-card">
         <img src="sport1.jpg" alt="Sport 1">
-        <div>
-          <h3>Sport 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec auctor neque in enim euismod, et blandit velit
-            convallis. Nam fringilla justo vel tempor bibendum.
-          </p>
-        </div>
+        <h3>Sport 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec auctor neque in enim euismod, et blandit velit
+          convallis. Nam fringilla justo vel tempor bibendum.
+        </p>
       </div>
-      <div class="feature">
+      <div class="sport-card">
         <img src="sport2.jpg" alt="Sport 2">
-        <div>
-          <h3>Sport 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec auctor neque in enim euismod, et blandit velit
-            convallis. Nam fringilla justo vel tempor bibendum.
-          </p>
-        </div>
+        <h3>Sport 2</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec auctor neque in enim euismod, et blandit velit
+          convallis. Nam fringilla justo vel tempor bibendum.
+        </p>
       </div>
-      <div class="feature">
+      <div class="sport-card">
         <img src="sport3.jpg" alt="Sport 3">
-        <div>
-          <h3>Sport 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec auctor neque in enim euismod, et blandit velit
-            convallis. Nam fringilla justo vel tempor bibendum.
-          </p>
-        </div>
-      </div>
+        <h3>Sport 3</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Donec auctor neque in enim euismod, et blandit velit convallis. Nam fringilla justo vel tempor bibendum.
+        </p>
+       </div>
     </div>
+
 </body>
 </html>
