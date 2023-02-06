@@ -10,7 +10,6 @@ body {
     background-color: #0071c5;
     color: #fff;
     padding: 20px;
-    text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,39 +20,84 @@ body {
   }
   
   nav {
-    background-color: #fff;
-    border: 1px solid #0071c5;
+    display: flex;
+    background-color: #0071c5;
+    color: #fff;
+    padding: 20px;
     border-radius: 5px;
-    margin: 20px 0;
-    padding: 10px;
-    text-align: center;
   }
   
   nav ul {
-    display: inline-block;
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
   }
   
   nav li {
-    display: inline-block;
     margin: 0 10px;
   }
   
   nav a {
-    color: #333;
+    color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
+    text-align: center;
   }
   
   nav a:hover {
+    background-color: #fff;
     color: #0071c5;
   }
+  
+  
   
   main {
     padding: 20px;
     text-align: center;
   }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .left-column,
+  .middle-column,
+  .right-column {
+    width: calc(33.33% - 20px);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .middle-column {
+    width: calc(66.66% - 40px);
+  }
+  
+  .article-block {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .article-block h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .article-block img {
+    width: 25%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .article-block p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+  
   
   footer {
     background-color: #0071c5;
