@@ -10,7 +10,10 @@ body {
     background-color: #0071c5;
     color: #fff;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   header h1 {
