@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sport website</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<!-- <title>Manchester United win against Manchester City in a long-awaiting derby on January 15th</title> -->
+    <link rel="stylesheet" href="mainweb.css">
+
+</head>
+<body>
+    <!-- meant for logo and date --> 
+
+<div id="navBar">
+    <ul>    
+        <li><img src="logo.png" alt="RiconRaunhi" width="60" height="60"></li>
+        <li><a href="mainweb.html">Home</a> </li>
+        <li><a href="football.html">Footbal</a></li>
+        <li><a href="tennis.html">Tennis</a></li>
+        <li><a href="basketball.html">Basketball</a></li>
+        <li><a href="livescore.html">Livescore</a></li>
+        <li><a href="video.html">Video</a></li>
+        <form>
+            <input type="text" placeholder="Search...">
+            <button type="submit">Go</button>
+        </form>
+    </ul>
+</div>
+<p id="date"></p>
+<div class="groupnews">
+    <div class="hotnews"> 
+        <h2>
+            Quang Hai: A Questioning Return
+        </h2>
+        <img src="NQH.jfif" alt="Quang Hai" style="width:100%;height:30%"> 
+        <p>Nguyen Quang Hai, who leave Ha Noi FC to play in Ligue 2 (France), has once said that he accept the 
+        challenge and hardness of playing football in France. However, he did not have a good performance there
+        and is finding a way back to Ha Noi FC, where he again needs to face another problem.
+        </p>
+    </div>
+    
+    <div class="sidenews">
+        <h3>
+            
+        </h3>
+    </div>
+</div>
+
+<script>
+  const dateElement = document.querySelector("#date");
+  const date = new Date();
+  dateElement.textContent = date.toDateString();
+</script>
+
+<script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const query = document.querySelector("input[type='text']").value;
+    // send the query to a server and retrieve search results
+    });
+</script>
+
+</body>
+</html>
